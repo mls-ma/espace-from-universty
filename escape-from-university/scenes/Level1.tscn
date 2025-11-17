@@ -1,0 +1,122 @@
+[gd_scene load_steps=2 format=3 uid="uid://dexyrtepy64q5"]
+
+[ext_resource type="Script" uid="uid://4tnigqaepvy1" path="res://scenes/Level1.gd" id="1_6ovph"]
+
+[node name="Level1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6ovph")
+
+[node name="Bg" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stretch_mode = 6
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7471857, 0.75287575, 0.73498994, 1)
+
+[node name="Hotspots" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DoorBtn" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="DeskBtn" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="PosterBtn" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="NoteBtn" type="Button" parent="Hotspots"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+
+[node name="KeypadPanel" type="PanelContainer" parent="."]
+visible = false
+custom_minimum_size = Vector2(420, 520)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -33.0
+offset_right = 20.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="KeypadPanel"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="KeypadPanel/VBox"]
+layout_mode = 2
+
+[node name="CodeBox" type="HBoxContainer" parent="KeypadPanel/VBox"]
+layout_mode = 2
+
+[node name="CodeLbl" type="Label" parent="KeypadPanel/VBox/CodeBox"]
+layout_mode = 2
+
+[node name="Grid" type="GridContainer" parent="KeypadPanel/VBox"]
+layout_mode = 2
+columns = 3
+
+[node name="CloseBtn" type="Button" parent="KeypadPanel/VBox"]
+layout_mode = 2
+
+[node name="HintPanel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBox" type="VBoxContainer" parent="HintPanel"]
+layout_mode = 2
+
+[node name="HintLbl" type="RichTextLabel" parent="HintPanel/VBox"]
+layout_mode = 2
+
+[node name="CloseHint" type="Button" parent="HintPanel/VBox"]
+layout_mode = 2
+
+[node name="Toast" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Fade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy07ui647fve6"]
+
+[ext_resource type="Script" uid="uid://bd2u0c41ejq3j" path="res://scenes/story_intro.gd" id="1_pl06e"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pl06e")
+
+[node name="Bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="Fade" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="UI" type="MarginContainer" parent="."]
+layout_mode = 1
+offset_right = 133.0
+offset_bottom = 86.0
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 72
+theme_override_constants/margin_bottom = 32
+
+[node name="Box" type="VBoxContainer" parent="UI"]
+layout_mode = 2
+
+[node name="Speaker" type="Label" parent="UI/Box"]
+layout_mode = 2
+
+[node name="Text" type="RichTextLabel" parent="UI/Box"]
+layout_mode = 2
+bbcode_enabled = true
+text_direction = 2
+
+[node name="Nav" type="HBoxContainer" parent="UI/Box"]
+layout_mode = 2
+
+[node name="Hint" type="Label" parent="UI/Box/Nav"]
+layout_mode = 2
+
+[node name="SkipBtn" type="Button" parent="UI/Box/Nav"]
+layout_mode = 2
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.28)
+
+[node name="TypeTimer" type="Timer" parent="."]
+wait_time = 0.02

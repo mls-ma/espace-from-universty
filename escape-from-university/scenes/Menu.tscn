@@ -1,0 +1,214 @@
+[gd_scene load_steps=12 format=3 uid="uid://dkhtf7uamew3r"]
+
+[ext_resource type="Script" uid="uid://c7mcmbvkoke2s" path="res://scenes/MainMenu.gd" id="1_o0tnf"]
+[ext_resource type="Texture2D" uid="uid://65mg2e1u7h4e" path="res://scenes/assets/img/uni.jpg" id="2_jmdev"]
+[ext_resource type="FontFile" uid="uid://cip5utkefwl8e" path="res://scenes/assets/fonts/Haunted.ttf" id="3_b6cxs"]
+[ext_resource type="FontFile" uid="uid://2f5n4jia4dpy" path="res://scenes/assets/fonts/ScaryBrusher.ttf" id="4_aaywf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n4eug"]
+bg_color = Color(0.25490198, 0, 0.039215688, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dlksc"]
+bg_color = Color(0.58, 0, 0, 0.99215686)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hcwhg"]
+bg_color = Color(0.25490198, 0, 0.039215688, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 15
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5p1lm"]
+bg_color = Color(0.25490198, 0, 0.039215688, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1igrg"]
+bg_color = Color(0.58, 0, 0, 0.99215686)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v0s1l"]
+bg_color = Color(0.25490198, 0, 0.039215688, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ylpcl"]
+bg_color = Color(0.58, 0, 0, 0.99215686)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 199.0
+offset_top = 46.0
+offset_right = 388.0
+offset_bottom = 141.0
+script = ExtResource("1_o0tnf")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -197.0
+offset_top = -42.0
+offset_right = 1083.0
+offset_bottom = 811.0
+texture = ExtResource("2_jmdev")
+
+[node name="SettingsPanel" type="Panel" parent="Control"]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control/SettingsPanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="VolumeSlider" type="HSlider" parent="Control/SettingsPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="Brightlessslider" type="HSlider" parent="Control/SettingsPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="creator" type="Button" parent="Control/SettingsPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Closed" type="Button" parent="Control/SettingsPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 23.840002
+anchor_top = 0.5
+anchor_right = 23.840002
+anchor_bottom = 0.5
+offset_left = -4573.7603
+offset_top = 264.5
+offset_right = -4138.7603
+offset_bottom = 951.5
+theme_override_constants/separation = 60
+
+[node name="NewGame" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0.6)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0.6)
+theme_override_fonts/font = ExtResource("3_b6cxs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_n4eug")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dlksc")
+text = "New Game"
+
+[node name="Continue" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0.23529412, 0.23529412, 0.23529412, 1)
+theme_override_fonts/font = ExtResource("3_b6cxs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_hcwhg")
+disabled = true
+text = "Continue"
+
+[node name="Setting" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.039215688, 0.039215688, 0.039215688, 1)
+theme_override_fonts/font = ExtResource("3_b6cxs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_5p1lm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1igrg")
+text = "Setting"
+
+[node name="Exit" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_b6cxs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_v0s1l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ylpcl")
+text = "Exit"
+
+[node name="HeaderLable" type="Label" parent="."]
+offset_left = 132.0
+offset_top = 93.0
+offset_right = 1230.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0.5882353, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.6)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("4_aaywf")
+theme_override_font_sizes/font_size = 120
+text = "Escape From University
+"
+
+[node name="TittleLable" type="Label" parent="HeaderLable"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 123.0
+offset_right = 827.0
+offset_bottom = 261.0
+theme_override_colors/font_shadow_color = Color(0.3, 0, 0, 0.6)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("3_b6cxs")
+theme_override_font_sizes/font_size = 30
+text = "They Said Graduation Was THE ONLY WAY OUT..."
+
+[connection signal="pressed" from="Control/SettingsPanel/Closed" to="Control" method="_on_closed_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Setting" to="Control" method="_on_setting_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Exit" to="Control" method="_on_exit_pressed"]
